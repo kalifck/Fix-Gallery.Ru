@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gallery.ru Redirector",
+  "version": "1.0",
+  "description": "Redirects old gallery.ru links to chch.ru",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.gallery.ru/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

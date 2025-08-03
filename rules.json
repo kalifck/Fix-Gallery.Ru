@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": { "host": "chch.ru" }
+      }
+    },
+    "condition": {
+      "requestDomains": ["gallery.ru"],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "stylesheet",
+        "script",
+        "image",
+        "object",
+        "xmlhttprequest",
+        "other"
+      ]
+    }
+  }
+]
